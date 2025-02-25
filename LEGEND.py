@@ -6,7 +6,7 @@ from telegram.error import TelegramError
 
 TELEGRAM_BOT_TOKEN = '7522275239:AAHbugjkhdtGtglUMfJWc8miwhgm9hwVuBk'
 ALLOWED_USER_ID = 184330421
-bot_access_free = True  
+bot_access_free = False 
 
 # Store attacked IPs to prevent duplicate attacks
 attacked_ips = set()
