@@ -45,7 +45,7 @@ async def attack(update: Update, context: CallbackContext):
     user_id = update.effective_user.id  
 
     if user_id != ALLOWED_USER_ID:
-        await context.bot.send_message(chat_id=chat_id, text="*❌ You are not authorized to use this bot!*  \n  *Contact the Admin to get Authorized @Noxxyy777*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*❌ You are not authorized to use this bot! /n Contact the Admin @Noxxyy777*", parse_mode='Markdown')
         return
 
     args = context.args
