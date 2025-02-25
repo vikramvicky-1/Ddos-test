@@ -14,9 +14,9 @@ attacked_ips = set()
 async def start(update: Update, context: CallbackContext):
     chat_id = update.effective_chat.id
     message = (
-        "*🔥 Welcome to the battlefield! 🔥*\n\n"
+        "*🔥 WELCOME TO NOXXY DODOS 🔥*\n\n"
         "*Use /attack <ip> <port> <duration>*\n"
-        "*Let the war begin! ⚔️💥*"
+        "*Let the War Begin! ⚔️💥*"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
@@ -45,7 +45,7 @@ async def attack(update: Update, context: CallbackContext):
     user_id = update.effective_user.id  
 
     if user_id != ALLOWED_USER_ID:
-        await context.bot.send_message(chat_id=chat_id, text="*❌ You are not authorized to use this bot!*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*❌ You are not authorized to use this bot!*  \n  *Contact the Admin to get Authorized @Noxxyy777*", parse_mode='Markdown')
         return
 
     args = context.args
